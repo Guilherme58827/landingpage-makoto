@@ -1,0 +1,186 @@
+html{
+    color: white;
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(150deg,aquamarine,blue);
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    max-width: 1120px;
+}
+.cabecalho{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+}
+.cabecalho .logo{
+    
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    border: 4px solid white;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 3;
+    font-family: "Raleway", sans-serif;
+    transition: 0.2s;
+}
+.cabecalho a:hover .logo {
+    color: blueviolet;
+    border: 4px solid blueviolet;
+}
+
+.cabecalho .menu li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: 0.6s 
+    ;
+}
+.cabecalho .menu li a:hover{
+    background-color: black;
+    color: blue;
+    border-radius: 50px;
+    transform: scale(1.5);
+}
+.home{
+    
+    display: flex;
+    min-height: calc(100vh - 125px);
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    }
+.home .informações{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  letter-spacing: 1.5px;
+  padding: 0 15px;
+  max-width: 50%;
+}
+.home .informações h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.home .informações p{
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+.home .redes-sociais{
+ 
+    
+    display: flex;
+    gap: 20px;
+}
+.home .redes-sociais a i{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    font-size: 26px;
+    transition: 0.3s;
+    
+}
+.home  .redes-sociais a:hover i {
+    
+    color: black;
+    border-color: black;
+    transform: scale(1.1);
+}
+.home .container-foto .foto{
+    
+    max-width: 450px;
+    border-radius: 50%;
+}
+.home .container-foto img{
+    width: 100%;
+    border-radius: 100%;
+}
+.projetos{
+    
+    padding: 70px 0 70px;
+}
+.projetos .titulo{
+    text-align: center;
+    padding: 60px 0;
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.projetos .container-projetos{
+    
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+    }
+.projetos .container-projetos .projeto{
+    max-width: 256px;
+    max-height: 500px;
+    position: relative;
+    display: none;
+}
+.projetos .projeto.ativo{
+    display: block;
+}
+.projetos .container-projetos img{
+    height: 100%;
+}
+.projetos .container-projetos h3{
+    background-color: rgb(13, 13, 13);
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: absolute;
+    bottom:0;
+
+}
+.projetos .projeto .informações-projeto{
+    background-color: rgb(11, 3, 65);
+    position:absolute;
+    top:0;
+    width: 100%;
+    height:100%;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.6s;
+    padding: 15px;
+}
+.projetos .projeto a:hover .informações-projeto{
+    opacity: 0.7;
+    
+} 
+.projetos .btn-mostrar-projetos{
+    background: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+    
+
+}
+.projetos .btn-mostrar-projetos:hover{
+    border: 1px solid rgb(13, 0, 0);
+    transition: 2s;
+}
+.projetos .btn-mostrar-projetos.remover{
+    display: none;
+}
